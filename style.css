@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Gochi+Hand');
+
+body {
+    display: flex;
+    justify-content: flex-start; /* Aligne le contenu horizontalement à gauche */
+    align-items: flex-start; /* Aligne le contenu verticalement en haut */
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-image:url('/assets/img/imagebg.png');
+    background-size: cover; /* L'image couvre toute la surface */
+    background-position: center center; /* L'image est centrée */
+    background-attachment: fixed; /* L'image reste fixe pendant le défilement */
+    height: 100vh; /* Assurez-vous que le corps prend toute la hauteur de la fenêtre */
+    width: 100vw; /* Assurez-vous que le corps prend toute la largeur de la fenêtre */
+margin-left: 150px;
+margin-top: 70px;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.todo {
+    width: 70%;
+}
+
+input {
+    border: none;
+    height: 50px;
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.379);
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    color: #000;
+    font-size: 20px;
+    padding-left: 15px;
+  
+}
+
+#enter button {
+    border: none;
+    height: 50px;
+    width: 5%;
+    cursor: pointer;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#enter button:hover {
+    background-color: #606c38;
+}
+
+#enter label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-family: 'Gochi Hand', cursive;
+    color: rgba(0, 0, 0, 0.477);
+    font-size: 60px;
+
+
+}
+
+span {
+    cursor: pointer;
+    margin-left: 25px;
+
+
+}
+
+.checked {
+    position: relative;
+    cursor: pointer;
+    text-decoration: line-through;
+}
+
+.checked::after {
+    content: "";
+    position: absolute;
+}
+
+#listTodo {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    max-height: 500px; 
+    overflow-y: auto; 
+    width: 350px;
+}
+
+#listTodo i {
+    font-size: 12px;
+
+}
+
+#listTodo li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.189);
+    border-radius: 15px;
+    padding: 8px 10px; 
+    margin: 5px 0;
+    cursor: pointer;
+    border: 2px solid rgba(0, 0, 0, 0.799);
+    color: #000;
+    font-size: 20px;
+    padding-left: 15px;
+}
